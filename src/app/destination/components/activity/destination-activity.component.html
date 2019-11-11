@@ -1,0 +1,15 @@
+<div class="grid">
+	<div class="grid-md6 grid-lg6" *ngFor="let activity of activities">
+		<div class="card">
+			<div class="card-image">
+				<img [src]="activity.thumbnail" alt="thumbnail" alt="Image manquante : {{activity.name}}">
+			</div>
+			<div class="card-content">
+				<h2>{{activity.name}}</h2>
+				<p>
+					{{activity.description}}
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
